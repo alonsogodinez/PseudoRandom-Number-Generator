@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SIMULACION</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#navbar-menu"
+                        aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    SIMULACION DE SISTEMAS
+                </a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle"
+                           data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">
+                            Generadores
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="cuadrados_medios.html">
+                                    Cuadrados Medios
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="productos_medios.html">
+                                    Productos Medios
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="multiplicador_constante.html">
+                                    Multiplicador Constante
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="lineal.html">
+                                    Lineal
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="congruencial_multiplicativo.html">
+                                    Congruencial Multiplicativo
+                                </a>
+                            </li>
+                                                          <li class="divider"></li>
+                            <li><a id="prueba_corridas_media" href="#">Prueba de corridas Media</a></li>
+                             <li class="divider"></li>
+                            <li><a id="prueba_poker" href="#">Prueba de Poker</a></li>
+                                                       <li class="divider"></li>
+                            <li><a id="prueba_series" href="#">Prueba de Series</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <section class="row container container-full">
+
+            <article class="col-sm-3 col-sm-offset-1 pb">
+                <div class="form-group">
+                    <label for="x0">X0</label>
+                    <input class="form-control" id="x0"  type="number"/>
+                </div>
+                <div class="form-group">
+                    <label for="numero_al">Cantidad de numeros aleatorios</label>
+                    <input class="form-control" id="numero_al"
+                           type="number"/>
+                </div>
+                <button class="btn btn-primary col-sm-12"
+                        id="cuadrados_medios">
+                    GENERAR
+                </button>
+            </article>
+
+            <article class="col-sm-7 col-sm-offset-1">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Numero aleatorios</h3>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Aun no hay números
+                            generados
+                            <p><span class="label label-danger">Genere números para realizar las pruebas</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pruebas"class="btn-group col-sm-12 hidden" role="group" aria-label="...">
+                    <button id="prueba_medias" class="btn btn-success col-sm-6 ">Realizar Prueba de medias</button>
+                    <button id="prueba_varianzas" class="btn btn-info col-sm-6 ">Realizar Prueba de varianzas</button>
+                </div>
+            </article>
+
+        </section>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
